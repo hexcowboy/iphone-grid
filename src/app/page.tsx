@@ -124,7 +124,15 @@ export default function App() {
           <h3 className="text-xl">Requirements</h3>
           <ul className="list-disc list-inside">
             <li>
-              Upon releasing a grid item, transition it to its new position
+              Upon releasing a grid item, transition it to its new position (
+              <a
+                href="https://drive.google.com/file/d/1AqjF70LsQRhDL9LyzsNK5sjOzhbGj-As/view?usp=sharing"
+                className="underline cursor-pointer"
+                target="_blank"
+              >
+                📼
+              </a>
+              )
             </li>
             <li>
               Fix the issue with dragging smaller items over larger ones (
