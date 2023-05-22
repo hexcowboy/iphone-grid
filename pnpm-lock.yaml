@@ -29,8 +29,8 @@ dependencies:
     specifier: 13.4.2
     version: 13.4.2(eslint@8.40.0)(typescript@5.0.4)
   framer-motion:
-    specifier: ^10.12.12
-    version: 10.12.12(react-dom@18.2.0)(react@18.2.0)
+    specifier: 4.1.17
+    version: 4.1.17(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 13.4.2
     version: 13.4.2(react-dom@18.2.0)(react@18.2.0)
@@ -1333,22 +1333,27 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: false
 
-  /framer-motion@10.12.12(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-DDCqp60U6hR7aUrXj/BXc/t0Sd/U4ep6w/NZQkw898K+u7s+Vv/P8yxq4WTNA86kU9QCsqOgn1Qhz2DpYK0Oag==}
+  /framer-motion@4.1.17(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-thx1wvKzblzbs0XaK2X0G1JuwIdARcoNOW7VVwjO8BUltzXPyONGAElLu6CiCScsOQRI7FIk/45YTFtJw5Yozw==}
     peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
+      react: '>=16.8 || ^17.0.0'
+      react-dom: '>=16.8 || ^17.0.0'
     dependencies:
+      framesync: 5.3.0
+      hey-listen: 1.0.8
+      popmotion: 9.3.6
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+      style-value-types: 4.1.4
       tslib: 2.5.0
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
+    dev: false
+
+  /framesync@5.3.0:
+    resolution: {integrity: sha512-oc5m68HDO/tuK2blj7ZcdEBRx3p1PjrgHazL8GYEpvULhrtGIFbQArN6cQS2QhW8mitffaB+VYzMjDqBxxQeoA==}
+    dependencies:
+      tslib: 2.5.0
     dev: false
 
   /fs.realpath@1.0.0:
@@ -1542,6 +1547,10 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: false
+
+  /hey-listen@1.0.8:
+    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
     dev: false
 
   /human-signals@2.1.0:
@@ -2203,6 +2212,15 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
+  /popmotion@9.3.6:
+    resolution: {integrity: sha512-ZTbXiu6zIggXzIliMi8LGxXBF5ST+wkpXGEjeTUDUOCdSQ356hij/xjeUdv0F8zCQNeqB1+PR5/BB+gC+QLAPw==}
+    dependencies:
+      framesync: 5.3.0
+      hey-listen: 1.0.8
+      style-value-types: 4.1.4
+      tslib: 2.5.0
+    dev: false
+
   /postcss-import@15.1.0(postcss@8.4.23):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
@@ -2540,6 +2558,13 @@ packages:
   /strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
+    dev: false
+
+  /style-value-types@4.1.4:
+    resolution: {integrity: sha512-LCJL6tB+vPSUoxgUBt9juXIlNJHtBMy8jkXzUJSBzeHWdBu6lhzHqCvLVkXFGsFIlNa2ln1sQHya/gzaFmB2Lg==}
+    dependencies:
+      hey-listen: 1.0.8
+      tslib: 2.5.0
     dev: false
 
   /styled-jsx@5.1.1(react@18.2.0):
